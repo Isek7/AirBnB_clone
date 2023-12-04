@@ -211,7 +211,7 @@ $ ./console.py
 (hbnb) create User
 6f348019-0499-420f-8eec-ef0fdc863c02
 (hbnb)
-(hbnb) update User 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "Martins"
+(hbnb) update User 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "Gabriel"
 (hbnb) show User 6f348019-0499-420f-8eec-ef0fdc863c02
 [User] (6f348019-0499-420f-8eec-ef0fdc863c02) {'created_at': datetime.datetime(
 2019, 2, 17, 21, 54, 39, 234382), 'first_name': 'Martins', 'updated_at': date
