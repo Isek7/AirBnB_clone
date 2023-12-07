@@ -74,12 +74,11 @@ the instance is saved to the file `file.json`.
 ```
 $ ./console.py
 (hbnb) create BaseModel
-119be863-6fe5-437e-a180-b9892e8746b8
+8ff582e2-c587-4d13-bf47-289f438c4097
 (hbnb) quit
 $ cat file.json ; echo ""
-{"BaseModel.119be863-6fe5-437e-a180-b9892e8746b8": {"updated_at": "2019-02-17T2
-1:30:42.215277", "created_at": "2019-02-17T21:30:42.215277", "__class__": "Base
-Model", "id": "119be863-6fe5-437e-a180-b9892e8746b8"}}
+{"BaseModel.973410a2-7096-41f4-a4e9-01cb219bc229": {"updated_at": "2023-12-04T07:16:54.204720", "created_at": "2023-12-04T07:16:54.204650", "__class__": "Base
+Model", "id": "973410a2-7096-41f4-a4e9-01cb219bc229"}}
 ```
 
 * **show**
@@ -90,17 +89,15 @@ Prints the string representation of a class instance based on a given id.
 ```
 $ ./console.py
 (hbnb) create User
-1e32232d-5a63-4d92-8092-ac3240b29f46
+614e71d1-f359-465d-8f84-359a5eb841b5
 (hbnb)
 (hbnb) show User 1e32232d-5a63-4d92-8092-ac3240b29f46
-[User] (1e32232d-5a63-4d92-8092-ac3240b29f46) {'id': '1e32232d-5a63-4d92-8092-a
-c3240b29f46', 'created_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828), 
-'updated_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828)}
+[User] (614e71d1-f359-465d-8f84-359a5eb841b5) {'id': '614e71d1-f359-465d-8f84-359a5eb841b5', 'created_at': datetime.datetime(2023, 12, 4, 10, 33, 16, 667262), 
+'updated_at': datetime.datetime(2023, 12, 4, 10, 33, 16, 667302)}
 (hbnb) 
-(hbnb) User.show(1e32232d-5a63-4d92-8092-ac3240b29f46)
-[User] (1e32232d-5a63-4d92-8092-ac3240b29f46) {'id': '1e32232d-5a63-4d92-8092-a
-c3240b29f46', 'created_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828), 
-'updated_at': datetime.datetime(2019, 2, 17, 21, 34, 3, 635828)}
+(hbnb) User.show(614e71d1-f359-465d-8f84-359a5eb841b5)
+[User] (614e71d1-f359-465d-8f84-359a5eb841b5) {'id': '614e71d1-f359-465d-8f84-359a5eb841b5', 'created_at': datetime.datetime(2023, 12, 4, 10, 33, 16, 667262), 
+'updated_at': datetime.datetime(2023, 12, 4, 10, 33, 16, 667302)}
 (hbnb) 
 ```
 * **destroy**
@@ -112,12 +109,12 @@ is updated accordingly.
 ```
 $ ./console.py
 (hbnb) create State
-d2d789cd-7427-4920-aaae-88cbcf8bffe2
+49a13545-e611-4951-9d73-f976fe6ada6e
 (hbnb) create Place
-3e-8329-4f47-9947-dca80c03d3ed
+8b304cae-974a-4a87-a61b-88e26ae978cf
 (hbnb)
-(hbnb) destroy State d2d789cd-7427-4920-aaae-88cbcf8bffe2
-(hbnb) Place.destroy(03486a3e-8329-4f47-9947-dca80c03d3ed)
+(hbnb) destroy State 49a13545-e611-4951-9d73-f976fe6ada6e
+(hbnb) Place.destroy(8b304cae-974a-4a87-a61b-88e26ae978cf)
 (hbnb) quit
 $ cat file.json ; echo ""
 {}
@@ -132,43 +129,29 @@ class name is provided, the command prints all instances of every class.
 ```
 $ ./console.py
 (hbnb) create BaseModel
-fce2124c-8537-489b-956e-22da455cbee8
+28221803-5b84-4a36-81af-c8778d664291
 (hbnb) create BaseModel
-450490fd-344e-47cf-8342-126244c2ba99
+32d9358d-a9d3-4f8b-9006-a0dc0aae00b3
 (hbnb) create User
-b742dbc3-f4bf-425e-b1d4-165f52c6ff81
+e50379f2-2851-43e1-91c1-ca6eee32df46
 (hbnb) create User
-8f2d75c8-fb82-48e1-8ae5-2544c909a9fe
+ad0c37eb-5f2a-4805-91b2-14e879560488
 (hbnb)
 (hbnb) all BaseModel
-["[BaseModel] (450490fd-344e-47cf-8342-126244c2ba99) {'updated_at': datetime.da
-tetime(2019, 2, 17, 21, 45, 5, 963516), 'created_at': datetime.datetime(2019, 2
-, 17, 21, 45, 5, 963516), 'id': '450490fd-344e-47cf-8342-126244c2ba99'}", "[Bas
-eModel] (fce2124c-8537-489b-956e-22da455cbee8) {'updated_at': datetime.datetime
-(2019, 2, 17, 21, 43, 56, 899348), 'created_at': datetime.datetime(2019, 2, 17,
-21, 43, 56, 899348), 'id': 'fce2124c-8537-489b-956e-22da455cbee8'}"]
+["[BaseModel] (973410a2-7096-41f4-a4e9-01cb219bc229) {'updated_at': datetime.da
+tetime(2023, 12, 4, 7, 16, 54, 204720), 'created_at': datetime.datetime(2023, 12, 4, 7, 16, 54, 204650), 'id': '973410a2-7096-41f4-a4e9-01cb219bc229'}", "[Bas
+eModel] (1b2d6bce-9be8-4f44-8747-2ad75ede890f) {'updated_at': datetime.datetime
+(2023, 12, 4, 8, 23, 41, 499064), 'created_at': datetime.datetime(2023, 12, 4, 8, 23, 41, 499036), 'id': '1b2d6bce-9be8-4f44-8747-2ad75ede890f'}"]
 (hbnb)
 (hbnb) User.all()
-["[User] (8f2d75c8-fb82-48e1-8ae5-2544c909a9fe) {'updated_at': datetime.datetim
-e(2019, 2, 17, 21, 44, 44, 428413), 'created_at': datetime.datetime(2019, 2, 17
-, 21, 44, 44, 428413), 'id': '8f2d75c8-fb82-48e1-8ae5-2544c909a9fe'}", "[User] 
-(b742dbc3-f4bf-425e-b1d4-165f52c6ff81) {'updated_at': datetime.datetime(2019, 2
-, 17, 21, 44, 15, 974608), 'created_at': datetime.datetime(2019, 2, 17, 21, 44,
-15, 974608), 'id': 'b742dbc3-f4bf-425e-b1d4-165f52c6ff81'}"]
+["[User] (be12df3a-e8c2-46f3-ae47-3d6bc6c51400) {'updated_at': datetime.datetim
+e(2023, 12, 4, 8, 23, 41, 599824), 'created_at': datetime.datetime(2023, 12, 4, 8, 23, 41, 599804), 'id': 'be12df3a-e8c2-46f3-ae47-3d6bc6c51400'}", "[User] 
+(c4368d4b-fdb1-45c3-a816-07c68d313c2d) {'updated_at': datetime.datetime(2023, 12, 4, 8, 24, 26, 606222), 'created_at': datetime.datetime(2023, 12, 4, 8, 24, 26, 606206), 'id': 'c4368d4b-fdb1-45c3-a816-07c68d313c2d'}"]
 (hbnb) 
 (hbnb) all
-["[User] (8f2d75c8-fb82-48e1-8ae5-2544c909a9fe) {'updated_at': datetime.datetim
-e(2019, 2, 17, 21, 44, 44, 428413), 'created_at': datetime.datetime(2019, 2, 17
-, 21, 44, 44, 428413), 'id': '8f2d75c8-fb82-48e1-8ae5-2544c909a9fe'}", "[BaseMo
-del] (450490fd-344e-47cf-8342-126244c2ba99) {'updated_at': datetime.datetime(20
-19, 2, 17, 21, 45, 5, 963516), 'created_at': datetime.datetime(2019, 2, 17, 21,
-45, 5, 963516), 'id': '450490fd-344e-47cf-8342-126244c2ba99'}", "[User] (b742db
-c3-f4bf-425e-b1d4-165f52c6ff81) {'updated_at': datetime.datetime(2019, 2, 17, 2
-1, 44, 15, 974608), 'created_at': datetime.datetime(2019, 2, 17, 21, 44, 15, 97
-4608), 'id': 'b742dbc3-f4bf-425e-b1d4-165f52c6ff81'}", "[BaseModel] (fce2124c-8
-537-489b-956e-22da455cbee8) {'updated_at': datetime.datetime(2019, 2, 17, 21, 4
-3, 56, 899348), 'created_at': datetime.datetime(2019, 2, 17, 21, 43, 56, 899348
-), 'id': 'fce2124c-8537-489b-956e-22da455cbee8'}"]
+["[User] (be12df3a-e8c2-46f3-ae47-3d6bc6c51400) {'updated_at': datetime.datetim
+e(2023, 12, 4, 8, 23, 41, 599824), 'created_at': datetime.datetime(2023, 12, 4, 8, 23, 41, 599804), 'id': 'be12df3a-e8c2-46f3-ae47-3d6bc6c51400'}", "[BaseMo
+del] (973410a2-7096-41f4-a4e9-01cb219bc229) {'updated_at': datetime.datetime(2023, 12, 4, 7, 16, 54, 204720), 'created_at': datetime.datetime(2023, 12, 4, 7, 16, 54, 204650), 'id': '973410a2-7096-41f4-a4e9-01cb219bc229'}", "[User] (c4368d4b-fdb1-45c3-a816-07c68d313c2d) {'updated_at': datetime.datetime(2023, 12, 4, 8, 24, 26, 606222), 'created_at': datetime.datetime(2023, 12, 4, 8, 24, 26, 606206), 'id': 'c4368d4b-fdb1-45c3-a816-07c68d313c2d'}", "[BaseModel] (1b2d6bce-9be8-4f44-8747-2ad75ede890f) {'updated_at': datetime.datetime(2023, 12, 4, 8, 23, 41, 499064), 'created_at': datetime.datetime(2023, 12, 4, 8, 23, 41, 499036), 'id': '1b2d6bce-9be8-4f44-8747-2ad75ede890f'}"]
 (hbnb)
 
 
@@ -182,11 +165,11 @@ Retrieves the number of instances of a given class.
 ```
 $ ./console.py
 (hbnb) create Place
-12c73223-f3d3-4dec-9629-bd19c8fadd8a
+0d0887c2-3892-44a7-9df9-cc44d4576b3a
 (hbnb) create Place
-aa229cbb-5b19-4c32-8562-f90a3437d301
+d4a3db78-2389-4cfd-b55f-519cf3eb439c
 (hbnb) create City
-22a51611-17bd-4d8f-ba1b-3bf07d327208
+e52ff3a7-9d4e-46d7-b7eb-6e21cfa87310
 (hbnb) 
 (hbnb) count Place
 2
@@ -209,30 +192,26 @@ providing a dictionary.
 ```
 $ ./console.py
 (hbnb) create User
-6f348019-0499-420f-8eec-ef0fdc863c02
+af42ea06-1b32-46f1-b5a0-3c8e446c1b44
 (hbnb)
 (hbnb) update User 6f348019-0499-420f-8eec-ef0fdc863c02 first_name "Gabriel"
 (hbnb) show User 6f348019-0499-420f-8eec-ef0fdc863c02
-[User] (6f348019-0499-420f-8eec-ef0fdc863c02) {'created_at': datetime.datetime(
-2019, 2, 17, 21, 54, 39, 234382), 'first_name': 'Gabriel', 'updated_at': date
-time.datetime(2019, 2, 17, 21, 54, 39, 234382), 'id': '6f348019-0499-420f-8eec-
-ef0fdc863c02'}
+[User] (af42ea06-1b32-46f1-b5a0-3c8e446c1b44) {'created_at': datetime.datetime(
+2023, 12, 7, 0, 6, 19, 894392), 'first_name': 'Gabriel', 'updated_at': date
+time.datetime(2023, 12, 7, 0, 6, 19, 894434), 'id': 'af42ea06-1b32-46f1-b5a0-3c8e446c1b44'}
 (hbnb)
-(hbnb) User.update(6f348019-0499-420f-8eec-ef0fdc863c02, address, "98 Mission S
+(hbnb) User.update(af42ea06-1b32-46f1-b5a0-3c8e446c1b44, address, "98 Mission S
 t")
-(hbnb) User.show(6f348019-0499-420f-8eec-ef0fdc863c02)
-[User] (6f348019-0499-420f-8eec-ef0fdc863c02) {'created_at': datetime.datetime(
-2019, 2, 17, 21, 54, 39, 234382), 'address': '98 Mission St', 'first_name': 
-'Gabriel','updated_at': datetime.datetime(2019, 2, 17, 21, 54, 39, 234382), 'id
-': '6f348019-0499-420f-8eec-ef0fdc863c02'}
+(hbnb) User.show(af42ea06-1b32-46f1-b5a0-3c8e446c1b44)
+[User] (af42ea06-1b32-46f1-b5a0-3c8e446c1b44) {'created_at': datetime.datetime(
+2023, 12, 7, 0, 6, 19, 894392), 'address': '98 Mission St', 'first_name': 
+'Gabriel','updated_at': datetime.datetime(2023, 12, 7, 0, 6, 19, 894434), 'id
+': 'af42ea06-1b32-46f1-b5a0-3c8e446c1b44'}
 (hbnb)
-(hbnb) User.update(6f348019-0499-420f-8eec-ef0fdc863c02, {'email': 
-'bengabrielisek@gmail.com', 'last_name': 'School'})
-[User] (6f348019-0499-420f-8eec-ef0fdc863c02) {'email': 'holberton@holberton.co
-m', 'first_name': 'Gabriel', 'updated_at': datetime.datetime(2019, 2, 17, 21,
-54, 39, 234382), 'address': '98 Mission St', 'last_name': 'School', 'id': '6f34
-8019-0499-420f-8eec-ef0fdc863c02', 'created_at': datetime.datetime(2019, 2, 17,
-21, 54, 39, 234382)}
+(hbnb) User.update(af42ea06-1b32-46f1-b5a0-3c8e446c1b44, {'email': 
+'bengabrielisek@gmail.com', 'last_name': 'Ben'})
+[User] (af42ea06-1b32-46f1-b5a0-3c8e446c1b44) {'email': 'bengabrielisek@gmail.co
+m', 'first_name': 'Gabriel', 'updated_at': datetime.datetime(2023, 12, 7, 0, 6, 19, 894434), 'address': '98 Mission St', 'last_name': 'Ben', 'id': 'af42ea06-1b32-46f1-b5a0-3c8e446c1b44', 'created_at': datetime.datetime(2023, 12, 7, 0, 6, 19, 894392)}
 (hbnb) 
 ```
 
