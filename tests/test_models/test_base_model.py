@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-
+"""Base Model Unittest Module."""
 import unittest
 from datetime import datetime as dtime
 from models import base_model
-
-"""Base Model Unittest Module."""
 
 
 class TestBaseModel(unittest.TestCase):
