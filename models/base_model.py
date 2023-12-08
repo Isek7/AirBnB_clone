@@ -7,7 +7,10 @@ import models
 
 
 class BaseModel:
-    """This class implement all common attributes for other models"""
+    """
+    This class implement all common attributes
+    for other models
+    """
 
     def __init__(self, *args, **kwargs):
         """Initializing the instances"""
@@ -30,12 +33,17 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
-        """Return the string representation of the BaseModel class"""
+        """
+        Return the string representation
+        of the BaseModel class
+        """
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
-        """Updates the public intstance atrribute updated_at with
-        the current datetime"""
+        """
+        Updates the public intstance atrribute updated_at with
+        the current datetime
+        """
         self.updated_at = datetime.today()
         models.storage.save()
 
