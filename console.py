@@ -13,7 +13,7 @@ from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
-    """This model represent our console."""
+    """This model represents our console."""
 
     prompt: str = "(hbnb) "
     file = None
@@ -21,7 +21,7 @@ class HBNBCommand(cmd.Cmd):
                   'Place', 'Review']
 
     def parse_input(self, cmd):
-        """Parse string pass to it."""
+        """Parse string passed to it."""
         arg = cmd.replace('(', ' ').replace('"', '').replace("'", "")
         arg = arg.replace('.', ' ', 1).replace(')', '')
         return arg
