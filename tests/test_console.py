@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """This is Console Test Module."""
 
 import json
