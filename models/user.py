@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""User module"""
+"""Module containing User class"""
 from models.base_model import BaseModel
 
 
