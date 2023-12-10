@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""review Module"""
+"""Module containig Review class"""
 from models.base_model import BaseModel
 
 
