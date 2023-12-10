@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is The Console Module."""
+"""This contains the Console Module."""
 import cmd
 import json
 from models.base_model import BaseModel
