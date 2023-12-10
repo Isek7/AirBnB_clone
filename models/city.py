@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""city Module"""
+"""Module containing City class"""
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """This class Initializes city instances"""
+    """This initializes City instances"""
     state_id: str = ""
     name: str = ""
