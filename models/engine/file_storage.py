@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""File storage class"""
+"""Module containing FileStorage class"""
 
 import json
 from models.base_model import BaseModel
